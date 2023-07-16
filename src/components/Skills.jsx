@@ -22,15 +22,15 @@ function Skills() {
 
   return (
     <div className="text-center">
-      <h2 className="text-black text-5xl md:text-7xl pt-16 md:mb-8">Habilidades</h2>
+      <h2 className="text-black text-5xl md:text-7xl pt-16 md:mb-8 ">Habilidades</h2>
       <section aria-label="Newest Photos">
-    <div className="carousel" data-carousel>
+    <div className="carousel lg:w-[50%]" data-carousel>
       <button onClick={buttonClicked} className="carousel-button prev" data-carousel-button="prev">&#8656;</button>
       <button onClick={buttonClicked} className="carousel-button next" data-carousel-button="next">&#8658;</button>
       <ul data-slides>
         <li className="slide" data-active>
           <img src={imagen1} alt="Nature Image #1" />
-          <div className="collapse bg-base-200 w-[80%] mx-auto">
+          <div className="collapse bg-base-200 w-[80%] lg:w-[50%] mx-auto">
             <input type="checkbox" /> 
             <div className="collapse-title text-xl font-medium 
             px-0 w-[90%] mx-auto">

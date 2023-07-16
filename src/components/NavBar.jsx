@@ -2,6 +2,8 @@ import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Yo from "../images/yo.jpg";
 
+import { useTranslation } from 'react-i18next';
+
 const navigation = [
   { name: "SobreMi", href: "#Inicio", current: true },
   { name: "Habilidades", href: "#Habilidades", current: false },
@@ -14,6 +16,8 @@ function classNames(...classes) {
 }
 
 export default function Example() {
+  const [t, i18n] = useTranslation("global");
+
   return (
     <>
       <div className="min-h-full w-[90vw] mx-auto mt-4 sticky top-2 z-10">
@@ -40,7 +44,7 @@ export default function Example() {
                             key={item.name}
                             href={item.href}
                             className="
-                            text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                            text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium "
                           >
                             {item.name}
                           </a>
@@ -49,7 +53,7 @@ export default function Example() {
                         <div className="dropdown">
                           <label
                             tabIndex={0}
-                            className="cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                            className="cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium"
                           >
                             Idioma
                           </label>
@@ -58,10 +62,11 @@ export default function Example() {
                             className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 mt-2"
                           >
                             <li>
-                              <a>Ingles</a>
+                              <button onClick={()=> i18n.changeLanguage("es")}>Español</button>
                             </li>
                             <li>
-                              <a>Español</a>
+                            <button onClick={()=> i18n.changeLanguage("en")}>Ingles</button>
+
                             </li>
                           </ul>
                         </div>
@@ -69,7 +74,7 @@ export default function Example() {
                         <div className="dropdown">
                           <label
                             tabIndex={0}
-                            className="cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                            className="cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium"
                           >
                             Color
                           </label>
@@ -141,11 +146,42 @@ export default function Example() {
                         className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 mt-2"
                       >
                         <li>
-                          <a>Ingles</a>
+                          <button onClick={()=> i18n.changeLanguage("en")}>Ingles</button>
                         </li>
                         <li>
-                          <a>Español</a>
+                          <button onClick={()=> i18n.changeLanguage("es")}>Español</button>
                         </li>
+                      </ul>
+                      <ul
+                        tabIndex={0}
+                        className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 mt-2"
+                      >          
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+                    <div className="dropdown">
+                      <label
+                        tabIndex={0}
+                        className="cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                      >
+                        Color
+                      </label>
+                      <ul
+                        tabIndex={0}
+                        className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 mt-2"
+                      >
+                        <li>
+                          <button>Claro</button>
+                        </li>
+                        <li>
+                          <button>Oscuro</button>
+                        </li>
+                      </ul>
+                      <ul
+                        tabIndex={0}
+                        className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 mt-2"
+                      >          
                       </ul>
                     </div>
                   </div>

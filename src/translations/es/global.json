@@ -1,0 +1,28 @@
+{
+  "NavBar": {
+    "title1": "Sobre Mi",
+    "title2": "Habilidades",
+    "title3": "Proyectos",
+    "title4": "Contactame",
+    "title5": "Idioma",
+    "title6": "Color",
+    "options1": {
+      "language1": "Español",
+      "language2": "Ingles"
+    },
+    "options2": {
+      "color1": "Claro",
+      "color2": "Oscuro"
+    }
+  },
+  "aboutMe": {
+    "header": "Sobre Mi",
+    "description": "Desarrollador Front-End independiente"
+  },
+  "Skills": {
+    "header": "Habilidades"
+  },
+  "Projects": {
+    "header": "Proyectos"
+  }
+}

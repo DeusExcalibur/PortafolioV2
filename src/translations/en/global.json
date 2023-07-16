@@ -1,0 +1,12 @@
+{
+  "header": {
+    "message": "Welcome to Pet Store Deluxe"
+  },
+  "aboutMe": {
+    "header": "About Me",
+    "description": "Front-End Developer"
+  },
+  "home": {
+    "body": "A store"
+  }
+}

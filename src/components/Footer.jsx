@@ -38,7 +38,7 @@ function Footer() {
           </div>
         </div>
         <div>
-          <p>Copyright © 2023 - David Segura Vesga</p>
+          <p>2023 - David Segura Vesga</p>
         </div>
       </footer>
     </div>

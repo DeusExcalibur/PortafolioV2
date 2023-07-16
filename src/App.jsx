@@ -7,7 +7,8 @@ import Footer from './components/Footer'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react'
-import idioma from './data'
+
+import { useTranslation } from 'react-i18next';
 
 function App() {
 
@@ -16,17 +17,23 @@ function App() {
 
   }, []);
 
+  const [t, i18n] = useTranslation("global");
+
   return (
     <>
       <a name="Inicio"></a>
+      <p>{t("header.message")}</p>
+      <button onClick={()=> i18n.changeLanguage("es")}>ES</button>
+      <button onClick={()=> i18n.changeLanguage("en")}>EN</button>
+      <NavBar/>
       <div data-aos="zoom-in-down">
-        <NavBar/>
         <AboutMe />
       </div>
 
+
       <a name="Habilidades"></a>
 
-      <div data-aos="fade-down-right"
+      <div data-aos="zoom-in-right"
       data-aos-anchor-placement="top-center"
       data-aos-duration="500">
         <Skills />
