@@ -20,9 +20,43 @@
     "description": "Desarrollador Front-End independiente"
   },
   "Skills": {
-    "header": "Habilidades"
+    "header": "Habilidades",
+    "skill1": "HTML",
+    "skill2": "CSS",
+    "skill3": "JavaScript",
+    "skill4": "React",
+    "description1": "HTML5",
+    "description2": "CSS, SASS, Bootstrap/React-Bootstrap, Tailwind, DaisyUI, entre otros frameworks y preprocesadores",
+    "description3": "Javascript, JQuery, JSX",
+    "description4": "React, React-Router, Hooks, etc",
+    "showhide": "Ver Mas"
   },
   "Projects": {
-    "header": "Proyectos"
+    "header": "Proyectos",
+    "description": "Clickea la imagen",
+    "proyecto1": {
+      "title": "Generador de consejos en ingles",
+      "description": "Mi primer proyecto con Tailwind y uso sin ninguna guia de APIs"
+    },
+    "proyecto2": {
+      "title": "Diccionario Ingles",
+      "description": "Diccionario de ingles con React"
+    },
+    "proyecto3": {
+      "title": "Juego de Dados",
+      "description": "1ra practica de DOM Manipulation con JS"
+    },
+    "proyecto4": {
+      "title": "Simon Game",
+      "description": "Juego de seguir una secuencia de colores"
+    },
+    "proyecto5": {
+      "title": "Calculadora de Edad",
+      "description": "Página para calcular tu edad exacta"
+    },
+    "proyecto6": {
+      "title": "Página Web Responsive",
+      "description": "Esta página fue mi 1ra practica de CSS Responsive Vanilla"
+    }
   }
 }

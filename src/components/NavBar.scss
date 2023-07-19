@@ -1,0 +1,15 @@
+@media (prefers-color-scheme: light) {
+  /* Estilos para el modo claro */
+  body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Estilos para el modo oscuro */
+  body {
+    background-color: #000000;
+    color: #ffffff;
+  }
+}

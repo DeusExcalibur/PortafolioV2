@@ -1,13 +1,14 @@
 function ProjectsSecondary(props) {
   return (
     <div>
-      <label className="btn swap swap-rotate h-80">
+      <label className="btn swap swap-rotate h-80 bg-gray-800
+      hover:bg-gray-900">
         {/* this hidden checkbox controls the state */}
         <input type="checkbox" />
 
-        <div className="swap-off fill-current">
+        <div className="swap-off fill-current ">
           <div>
-            <h5 className="mb-6">{props.titulo}</h5>
+            <h5 className="pt-3 mb-3">{props.titulo}</h5>
             <img className="w-[40rem] h-[15rem] rounded-3xl" src={props.imagen} alt="XD" />
           </div>
         </div>

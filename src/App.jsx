@@ -8,8 +8,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react'
 
-import { useTranslation } from 'react-i18next';
-
 function App() {
 
   useEffect(() => {
@@ -17,14 +15,9 @@ function App() {
 
   }, []);
 
-  const [t, i18n] = useTranslation("global");
-
   return (
     <>
       <a name="Inicio"></a>
-      <p>{t("header.message")}</p>
-      <button onClick={()=> i18n.changeLanguage("es")}>ES</button>
-      <button onClick={()=> i18n.changeLanguage("en")}>EN</button>
       <NavBar/>
       <div data-aos="zoom-in-down">
         <AboutMe />
@@ -43,7 +36,8 @@ function App() {
 
       <Projects />
 
-      <div data-aos="fade-down">
+      <div data-aos="fade-down"
+      data-aos-anchor-placement="center-bottom">
         <Footer />
       </div>
       <a name="Contactame"></a>

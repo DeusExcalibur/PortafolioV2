@@ -4,19 +4,19 @@ import Yo from "../images/yo.jpg";
 
 import { useTranslation } from 'react-i18next';
 
-const navigation = [
-  { name: "SobreMi", href: "#Inicio", current: true },
-  { name: "Habilidades", href: "#Habilidades", current: false },
-  { name: "Proyectos", href: "#Proyectos", current: false },
-  { name: "Contactame", href: "#Contactame", current: false },
-];
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-
 export default function Example() {
   const [t, i18n] = useTranslation("global");
+
+  const navigation = [
+    { name: `${t("NavBar.title1")}`, href: "#Inicio", current: true },
+    { name: `${t("NavBar.title2")}`, href: "#Habilidades", current: false },
+    { name: `${t("NavBar.title3")}`, href: "#Proyectos", current: false },
+    { name: `${t("NavBar.title4")}`, href: "#Contactame", current: false },
+  ];
+  
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(" ");
+  }
 
   return (
     <>
@@ -55,41 +55,41 @@ export default function Example() {
                             tabIndex={0}
                             className="cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium"
                           >
-                            Idioma
+                            {t("NavBar.title5")}
                           </label>
                           <ul
                             tabIndex={0}
-                            className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 mt-2"
+                            className="dropdown-content z-[1] menu p-2 shadow bg-gray-800 rounded-box w-52 mt-2"
                           >
                             <li>
-                              <button onClick={()=> i18n.changeLanguage("es")}>Español</button>
+                              <button onClick={()=> i18n.changeLanguage("es")}>{t("NavBar.options1.language1")}</button>
                             </li>
                             <li>
-                            <button onClick={()=> i18n.changeLanguage("en")}>Ingles</button>
+                            <button onClick={()=> i18n.changeLanguage("en")}>{t("NavBar.options1.language2")}</button>
 
                             </li>
                           </ul>
                         </div>
 
-                        <div className="dropdown">
+                        {/* <div className="dropdown">
                           <label
                             tabIndex={0}
                             className="cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium"
                           >
-                            Color
+                            {t("NavBar.title6")}
                           </label>
                           <ul
                             tabIndex={0}
-                            className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 mt-2"
+                            className="dropdown-content z-[1] menu p-2 shadow bg-gray-800 rounded-box w-52 mt-2"
                           >
                             <li>
-                              <a>Claro</a>
+                              <a>{t("NavBar.options2.color1")}</a>
                             </li>
                             <li>
-                              <a>Oscuro</a>
+                              <a>{t("NavBar.options2.color2")}</a>
                             </li>
                           </ul>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -159,7 +159,7 @@ export default function Example() {
                       </ul>
                     </div>
                   </div>
-                  <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+                  {/* <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
                     <div className="dropdown">
                       <label
                         tabIndex={0}
@@ -184,7 +184,7 @@ export default function Example() {
                       >          
                       </ul>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </Disclosure.Panel>
             </>

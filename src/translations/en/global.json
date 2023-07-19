@@ -1,12 +1,62 @@
 {
-  "header": {
-    "message": "Welcome to Pet Store Deluxe"
+  "NavBar": {
+    "title1": "About Me",
+    "title2": "Skills",
+    "title3": "Projects",
+    "title4": "Contact Me",
+    "title5": "Language",
+    "title6": "Colour",
+    "options1": {
+      "language1": "Spanish",
+      "language2": "English"
+    },
+    "options2": {
+      "color1": "Light",
+      "color2": "Dark"
+    }
   },
   "aboutMe": {
     "header": "About Me",
     "description": "Front-End Developer"
   },
-  "home": {
-    "body": "A store"
+  "Skills": {
+    "header": "Skills",
+    "skill1": "HTML",
+    "skill2": "CSS",
+    "skill3": "JavaScript",
+    "skill4": "React",
+    "description1": "HTML5",
+    "description2": "CSS, SASS, Bootstrap/React-Bootstrap, Tailwind, DaisyUI, and other CSS frameworks and preprocessors",
+    "description3": "Javascript, JQuery, JSX",
+    "description4": "React, React-Router, Hooks, etc",
+    "showhide": "More"
+  },
+  "Projects": {
+    "header": "Projects",
+    "description": "Click the image",
+    "proyecto1": {
+      "title": "Advice Generator",
+      "description": "My 1st Tailwind project and usage of APIs"
+    },
+    "proyecto2": {
+      "title": "English Dictionary",
+      "description": "English Dictionary with React"
+    },
+    "proyecto3": {
+      "title": "Dice Game",
+      "description": "1st practice of DOM Manipulation with JS"
+    },
+    "proyecto4": {
+      "title": "Simon Game",
+      "description": "Game about following a sequence of colours"
+    },
+    "proyecto5": {
+      "title": "Age Calculator",
+      "description": "Page made for calculating your exact age"
+    },
+    "proyecto6": {
+      "title": "Web Responsive Page",
+      "description": "This was my 1st practice of Responsive Design"
+    }
   }
 }
